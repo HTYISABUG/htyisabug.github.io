@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>index</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+        <script src="http://d3js.org/d3.v3.min.js"></script>
+        <script src="index.js"></script>
+        <h1>遊戲銷量統計</h1>
+        <div class="histogram"></div>
+        <div class="info">
+            <div class="platform">
+                <svg class="pie"></svg>
+                <svg class="legend"></svg>
+            </div>
+            <div class="area">
+                <svg class="pie"></svg>
+                <svg class="legend"></svg>
+            </div>
+            <div class="genre">
+                <svg class="pie"></svg>
+                <svg class="legend"></svg>
+            </div>
+            <div class="btn">
+                <button onclick="btnYear()">Year</button>
+                <button onclick="btnPlatform()">Platform</button>
+                <button onclick="btnArea()">Area</button>
+                <button onclick="btnGenre()">Genre</button>
+            </div>
+            <button id="add" onclick="newData()">Add new data</button>
+        </div>
+    </body>
+</html>
